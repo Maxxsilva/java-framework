@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
+            http://java.sun.com/xml/ns/persistence/orm_2_1.xsd" version="2.1">
+    <entity class="cm.java.aula.exemplo">
+        <table name="livro_mapeado_xml"/>
+        <attributes>
+            <basic name="titulo">
+                <column name="titulo_livro" nullable="false" updatable="false"/>
+            </basic>
+            <basic name="descricao">
+                <column length="2000"/>
+            </basic>
+            <basic name="nroDaPagina">
+                <column name="nro_da_pagina" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
