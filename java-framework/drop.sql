@@ -1,6 +1,19 @@
 ALTER TABLE t_cidade DROP CONSTRAINT FK_t_cidade_ID
 ALTER TABLE t_pais DROP CONSTRAINT FK_t_pais_ID
+ALTER TABLE t_consumidor_11uni DROP CONSTRAINT tcnsmdor11uniNDRCD
+ALTER TABLE t_consumidor_11uni_join DROP CONSTRAINT tcnsmdr11njincndrc
+ALTER TABLE t_item_compra_join_column_2 DROP CONSTRAINT ttmcmprjnclmn2crcb
+ALTER TABLE t_item_compra_join_column DROP CONSTRAINT ttmcmprjnclctmcmpr
+ALTER TABLE t_item_compra_join_column DROP CONSTRAINT ttmcmprjnclumncrcb
 ALTER TABLE Etiqueta DROP CONSTRAINT tqetaLvroColecaoID
+ALTER TABLE t_recibo_t_item_compra DROP CONSTRAINT trcbttmcmptnsCmprD
+ALTER TABLE t_recibo_t_item_compra DROP CONSTRAINT trcbttemcompraRcbD
+ALTER TABLE t_junc_arts_cd DROP CONSTRAINT tjunc_arts_cdce_cd
+ALTER TABLE t_junc_arts_cd DROP CONSTRAINT tjncartscdcartista
+ALTER TABLE t_noticia_indexado_t_comentario_indexado DROP CONSTRAINT tntcndxdtcNtcndxdD
+ALTER TABLE t_noticia_indexado_t_comentario_indexado DROP CONSTRAINT tntcndxdtcmcmntrsD
+ALTER TABLE t_noticia_ordenado_t_comentarios_ordenado DROP CONSTRAINT tntcrdndtcmcmntrsD
+ALTER TABLE t_noticia_ordenado_t_comentarios_ordenado DROP CONSTRAINT tntcrdndtcNtcrdndD
 DROP TABLE LIVRO
 DROP TABLE PESSOA
 DROP TABLE t_endereco
@@ -16,5 +29,24 @@ DROP TABLE CONSUMIDOREMB
 DROP TABLE CONSUMIDORMETODO
 DROP TABLE CONSUMIDORMISTURADO
 DROP TABLE LIVROCOLECAO
+DROP TABLE t_consumidor_11uni
+DROP TABLE t_consumidor_11uni_join
+DROP TABLE t_item_compra
+DROP TABLE t_item_compra_join_column_2
+DROP TABLE t_item_compra_join_column
+DROP TABLE t_recibo
+DROP TABLE t_recibo_join_column2
+DROP TABLE t_recibo_join_column
+DROP TABLE t_artistas
+DROP TABLE t_cd
+DROP TABLE t_item_tabelao
+DROP TABLE t_comentario_indexado
+DROP TABLE t_comentarios_ordenado
+DROP TABLE t_noticia_indexado
+DROP TABLE t_noticia_ordenado
 DROP TABLE Etiqueta
+DROP TABLE t_recibo_t_item_compra
+DROP TABLE t_junc_arts_cd
+DROP TABLE t_noticia_indexado_t_comentario_indexado
+DROP TABLE t_noticia_ordenado_t_comentarios_ordenado
 DELETE FROM SEQUENCE WHERE SEQ_NAME = 'SEQ_GEN'
